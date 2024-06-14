@@ -12,44 +12,44 @@
     <main>
         <h1 class="mainTitle">WAIVER AND TUITION FEE CALCULATOR</h1>
 
-        <form  class="selection">
+        <form class="selection">
             <!-- tution category -->
-            <label for="tution-category" class="category-title">Select tution category</label>
+            <!-- <label for="tution-category" class="category-title">Select tution category</label>
             <select required class="selector" name="tution-category" id="tution-category">
                 
-            </select>
+            </select> -->
 
             <!-- program types -->
             <label for="program-category" class="category-title">Select program types</label>
             <select required class="selector" name="program-category" id="program-category">
-                
+
             </select>
 
             <!-- waiver category -->
             <label for="waiver-category" class="category-title">Select waiver types</label>
-            <select required class="selector" name="waiver-category" id="waiver-category">
-                
+            <select required class="selector" name="waiverCategory" id="waiver-category">
+
             </select>
 
 
             <!-- course programs -->
             <label for="course-category" class="category-title">Select course programs</label>
-            <select required class="selector" name="course-category" id="course-category">
-                
+            <select required class="selector" name="courseCategory" id="course-category">
+
             </select>
 
             <!-- education board -->
             <label for="board-category" class="category-title">Education board</label>
             <select required class="selector" name="board-category" id="board-category">
-                
+
             </select>
 
             <!-- education board -->
             <label for="ssc-result" class="category-title">S.S.C Result *</label>
-            <input required class="selector" id="ssc-result" type="number">
+            <input class="selector" name="sscResult" id="ssc-result" type="number" min="1" max="5" />
 
             <label for="hsc-result" class="category-title">H.S.C Result *</label>
-            <input required class="selector" id="hsc-result" type="number">
+            <input class="selector" name="hscResult" id="hsc-result" type="number" min="1" max="5" />
 
             <!-- gender -->
             <label class="category-title">Gender *</label>
@@ -64,12 +64,23 @@
 
             <button class="submit-btn" type="submit">Calculate</button>
 
-
         </form>
+
     </main>
 
+    <!-- Modal -->
+    <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="modalData" class="modalData">
+                
+            </div>
+        </div>
+    </div>
+    
 
-    <script src="script.js" />
+    <script src="index.js" />
 </body>
 
 </html>
